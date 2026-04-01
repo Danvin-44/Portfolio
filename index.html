@@ -3,79 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>V Danvin | Portfolio</title>
+    <title>V Danvin | AI & Security</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
+            color: #24292e;
+            max-width: 850px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 3rem 2rem;
         }
         a { color: #0366d6; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        h1 { font-size: 2.5rem; margin-bottom: 0.2rem; }
-        h2 { font-size: 1.5rem; margin-top: 2rem; border-bottom: 1px solid #eaecef; padding-bottom: 0.3rem; }
-        .subtitle { font-size: 1.1rem; color: #586069; margin-bottom: 1rem; }
-        .links { margin-bottom: 2rem; }
+        h1 { font-size: 2.5rem; margin-bottom: 0.2rem; font-weight: 600; letter-spacing: -0.5px; }
+        h2 { font-size: 1.5rem; margin-top: 2.5rem; border-bottom: 1px solid #eaecef; padding-bottom: 0.4rem; font-weight: 600; }
+        .subtitle { font-size: 1.1rem; color: #586069; margin-bottom: 1.5rem; font-weight: 400; }
+        .links { margin-bottom: 2.5rem; font-size: 0.95rem; }
         .links a { margin-right: 1.5rem; font-weight: 500; }
-        ul { padding-left: 1.5rem; }
-        li { margin-bottom: 0.5rem; }
-        .project-title { font-weight: bold; }
-        .footer { margin-top: 4rem; font-size: 0.9rem; color: #6a737d; text-align: center; }
+        p { margin-bottom: 1rem; color: #333; }
+        ul { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+        li { margin-bottom: 0.6rem; color: #333; }
+        .project-item { margin-bottom: 1.5rem; }
+        .project-title { font-weight: 600; color: #24292e; }
+        .project-meta { font-size: 0.9rem; margin-top: 0.2rem; }
+        .footer { margin-top: 5rem; font-size: 0.9rem; color: #6a737d; text-align: center; border-top: 1px solid #eaecef; padding-top: 2rem; }
     </style>
 </head>
 <body>
     <header>
         <h1>V Danvin</h1>
-        <div class="subtitle">Information Technology Student · Machine Learning · Cybersecurity</div>
+        <div class="subtitle">AI Systems Researcher · LLM Reliability · Cybersecurity & Edge</div>
         <div class="links">
-            <a href="https://github.com/Danvin-44">GitHub</a>
-            <a href="https://www.linkedin.com/in/danvin-v-4760a32b2/">LinkedIn</a>
-            <a href="mailto:danvin10001@gmail.com">Email</a>
+            <a href="https://github.com/YOUR_USERNAME">GitHub</a>
+            <a href="https://linkedin.com/in/YOUR_LINKEDIN">LinkedIn</a>
+            <a href="mailto:YOUR_EMAIL@example.com">Email</a>
         </div>
     </header>
 
     <section>
         <h2>About</h2>
-        <p>I am an Information Technology student at St. Joseph's College of Engineering in Chennai. My work focuses on machine learning, edge intelligence, and cybersecurity. I am particularly interested in LLM fine-tuning, competitive programming, and building secure systems. Outside of tech, I am currently studying the Japanese language and enjoy creating digital art.</p>
+        <p>I am an engineer and researcher focusing on the reliability, evaluation, and deployment of machine learning systems in high-stakes environments. My core work centers on fine-tuning and evaluating Large Language Models (LLMs) for structured decision-making, with a particular interest in hallucination control and alignment with strict cybersecurity frameworks like NIST CSF 2.0.</p>
+        <p>I am passionate about moving beyond isolated model building to engineering end-to-end, secure, and resource-efficient AI systems—from automated compliance auditing in the cloud to context-aware intelligence on the edge.</p>
     </section>
 
     <section>
-        <h2>Interests</h2>
+        <h2>Research & Engineering Interests</h2>
         <ul>
-            <li>Machine Learning, AI & LLMs</li>
-            <li>Cybersecurity & Regulatory Auditing</li>
-            <li>Software Development & Competitive Programming</li>
-            <li>Edge Intelligence Systems</li>
+            <li><strong>LLM Alignment & Evaluation:</strong> Hallucination detection, prompt engineering pipelines, and metric-driven validation.</li>
+            <li><strong>Security & Compliance:</strong> Applied AI for regulatory auditing, anomaly detection, and secure system architectures.</li>
+            <li><strong>Edge Intelligence:</strong> Resource-constrained inference, state-based decision logic, and low-latency hardware integration.</li>
+            <li><strong>Systems Engineering:</strong> Building robust, production-ready pipelines with measurable performance baselines.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Systems & Research Artifacts</h2>
+        
+        <div class="project-item">
+            <div class="project-title">NIST-Auditor: LLM Framework for Regulatory Compliance</div>
+            <div>Fine-tuned an 8B parameter LLM (FS8B) to perform automated gap analysis against NIST CSF 2.0 controls. Built role-aware prompting pipelines and evaluation heuristics to reduce hallucinated compliance outputs and improve audit consistency across varied security environments.</div>
+            <div class="project-meta">
+                <a href="#">GitHub</a> · <a href="#">Evaluation Report (PDF)</a> · <a href="#">Benchmark Tables</a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">DevAccess: Real-Time Edge Intelligence Architecture</div>
+            <div>Designed a real-time edge intelligence system on an ESP32 microcontroller, integrating PIR, RFID, and environmental sensors for context-aware access control. Implemented state-based decision logic to minimize cloud dependency and latency, achieving sub-200ms authorization time and robust fallback mechanisms.</div>
+            <div class="project-meta">
+                <a href="#">GitHub</a> · <a href="#">System Architecture Diagram</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Technical Writing & Experiments</h2>
+        <ul>
+            <li><strong><a href="#">Evaluating Hallucinations in 8B Models for Cybersecurity</a></strong> — A deep dive into prompt engineering strategies, accuracy vs. baseline metrics, and failure cases when applying small LLMs to strict regulatory frameworks.</li>
+            <li><strong><a href="#">Optimizing Edge Inference on ESP32</a></strong> — Benchmarking architectural trade-offs for running state-based decision logic on microcontrollers with limited memory.</li>
         </ul>
     </section>
 
     <section>
         <h2>Experience</h2>
         <ul>
-            <li>Machine Learning Intern, Zephyr Technologies</li>
-            <li>Research Intern, NITK</li>
-            <li>Information Systems Intern, ONGC MRPL</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Selected Projects</h2>
-        <ul>
-            <li><span class="project-title">DevAccess</span> — An edge intelligence system utilizing an ESP32 for state-based access control with multi-sensor integration.</li>
-            <li><span class="project-title">NIST Compliance Auditor</span> — Fine-tuned the Foundation-Sec-8B (FS8B) model to automate regulatory audits based on the NIST CSF 2.0 framework.</li>
+            <li><strong>Research Intern, NITK</strong> — Researched and evaluated [Insert Specific Tech/Concept], designing frameworks to analyze system behavior and establish performance baselines.</li>
+            <li><strong>Machine Learning Intern, Zephyr Technologies</strong> — Engineered and validated machine learning pipelines for [Insert Application], optimizing model performance, feature extraction, and deployment efficiency.</li>
+            <li><strong>Information Systems Intern, ONGC MRPL</strong> — Audited and improved enterprise information systems, validating robust security protocols and optimizing operational data flows.</li>
         </ul>
     </section>
 
     <section>
         <h2>Education</h2>
-        <p>B.Tech in Information Technology<br>St. Joseph's College of Engineering, Chennai, Tamil Nadu</p>
+        <p><strong>B.Tech in Information Technology</strong><br>St. Joseph's College of Engineering, Chennai</p>
     </section>
 
     <div class="footer">
-        &copy; 2026 V Danvin
+        &copy; 2026 V Danvin · Engineered for Reliability
     </div>
 </body>
 </html>
